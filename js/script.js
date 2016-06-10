@@ -81,15 +81,11 @@ var timer = function() {
 	var stopGradient = Math.floor(parseInt(startGradientHex, 16)) - Math.floor(parseInt(startGradientHex, 16) * 0.50)
 	var stopGradientHex = stopGradient.toString(16)
 
-	console.log("start:" + startGradientHex + " stop: " + stopGradientHex)
-	
 	bodyNode.style.background = "radial-gradient(circle farthest-corner at center center, #" + startGradientHex + " 10%, #" + stopGradientHex + " 100%)"
-
 
 	// Changing progress bar width
 
 	progressBarNode.style.width = finalSeconds + "%"
-	
 
 }
 
